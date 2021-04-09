@@ -34,7 +34,7 @@ public class MudarCor : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
 
-            Screen.lockCursor = false;
+            
             foreach (GameObject j in objects)
             {
                 sp = j.GetComponent<SpriteRenderer>();

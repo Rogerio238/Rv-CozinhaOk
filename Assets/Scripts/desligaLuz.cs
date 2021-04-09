@@ -8,7 +8,7 @@ public class desligaLuz : MonoBehaviour
 
     private void Start()
     {
-        Screen.lockCursor = true;
+        //Screen.lockCursor = true;
     }
     public void desligarLuz()
     {

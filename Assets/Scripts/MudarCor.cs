@@ -72,7 +72,7 @@ public class MudarCor : MonoBehaviour
 
     public void mudaCorVerde()
     {
-        Screen.lockCursor = true;
+       
         if (mudanca == 1)
         {
             objects[0].GetComponent<Renderer>().material.color = Color.green;
@@ -93,7 +93,6 @@ public class MudarCor : MonoBehaviour
     }
     public void mudaCorVermelho()
     {
-        Screen.lockCursor = true;
         if (mudanca == 1)
         {
             objects[0].GetComponent<Renderer>().material.color = Color.red;

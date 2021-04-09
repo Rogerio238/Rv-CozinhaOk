@@ -111,7 +111,28 @@ public class MudarCor : MonoBehaviour
         }
 
     }
+    public void mudaCorAzul()
+    {
 
+        if (mudanca == 1)
+        {
+            objects[0].GetComponent<Renderer>().material.color = Color.blue;
+        }
+        if (mudanca == 2)
+        {
+            objects[1].GetComponent<Renderer>().material.color = Color.blue;
+        }
+
+        if (mudanca == 3)
+        {
+            objects[2].GetComponent<Renderer>().material.color = Color.blue;
+        }
+        if (mudanca == 4)
+        {
+            objects[3].GetComponent<Renderer>().material.color = Color.blue;
+        }
+
+    }
 
     public void mudaTextura()
     {
@@ -119,6 +140,13 @@ public class MudarCor : MonoBehaviour
         {
             objects[0].GetComponent<Renderer>().material.SetTexture("_MainTex", texturas[0]);
 
+        }
+    }
+    public void mudaTextura2()
+    {
+        if (mudanca == 1)
+        {
+            objects[0].GetComponent<Renderer>().material.SetTexture("_MainTex", texturas[1]);
 
         }
     }

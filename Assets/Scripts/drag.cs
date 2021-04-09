@@ -21,8 +21,8 @@ public class drag : MonoBehaviour
             gameObject.transform.position).z;
 
 
+        this.GetComponent<Rigidbody>().AddForce(Vector3.left * 100.0f);
 
-        // Store offset = gameobject world pos - mouse world pos
 
         mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
 

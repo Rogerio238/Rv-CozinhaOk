@@ -5,7 +5,11 @@ using UnityEngine;
 public class desligaLuz : MonoBehaviour
 {
     public Light luzParaDesligar;
-    
+
+    private void Start()
+    {
+        Screen.lockCursor = true;
+    }
     public void desligarLuz()
     {
         if(luzParaDesligar.intensity > 0)

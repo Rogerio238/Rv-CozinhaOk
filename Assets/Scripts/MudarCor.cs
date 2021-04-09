@@ -30,10 +30,11 @@ public class MudarCor : MonoBehaviour
     {
 
 
-
         // Check for mouse input
         if (Input.GetMouseButton(0))
         {
+
+            Screen.lockCursor = false;
             foreach (GameObject j in objects)
             {
                 sp = j.GetComponent<SpriteRenderer>();
@@ -65,12 +66,13 @@ public class MudarCor : MonoBehaviour
 
                 }
             }
+           
         }
     }
 
     public void mudaCorVerde()
     {
-
+        Screen.lockCursor = true;
         if (mudanca == 1)
         {
             objects[0].GetComponent<Renderer>().material.color = Color.green;
@@ -91,7 +93,7 @@ public class MudarCor : MonoBehaviour
     }
     public void mudaCorVermelho()
     {
-
+        Screen.lockCursor = true;
         if (mudanca == 1)
         {
             objects[0].GetComponent<Renderer>().material.color = Color.red;

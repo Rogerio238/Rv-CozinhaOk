@@ -18,7 +18,7 @@ public class desligaLuz : MonoBehaviour
         }
         else if(luzParaDesligar.intensity == 0)
         {
-            luzParaDesligar.intensity = 7;
+            luzParaDesligar.intensity = 3.16f;
         }
     }
 }
